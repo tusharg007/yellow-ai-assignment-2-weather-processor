@@ -1,0 +1,70 @@
+{
+  "attempted": 4,
+  "succeeded": 3,
+  "delayed": 0,
+  "unchanged": 3,
+  "expected_failures": 1,
+  "unexpected_failures": 0,
+  "status": "complete",
+  "orders": [
+    {
+      "order_id": "1001",
+      "city": "New York",
+      "started_at": "2026-09-11T14:57:13.855Z",
+      "finished_at": "2026-09-11T14:57:14.329Z",
+      "duration_ms": 474,
+      "retry_count": 0,
+      "weather": {
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "observed_at": "2026-09-11T14:55:35.000Z"
+      },
+      "outcome": "unchanged"
+    },
+    {
+      "order_id": "1002",
+      "city": "Mumbai",
+      "started_at": "2026-09-11T14:57:14.061Z",
+      "finished_at": "2026-09-11T14:57:15.286Z",
+      "duration_ms": 1225,
+      "retry_count": 0,
+      "weather": {
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "observed_at": "2026-09-11T14:52:19.000Z"
+      },
+      "outcome": "unchanged"
+    },
+    {
+      "order_id": "1003",
+      "city": "London",
+      "started_at": "2026-09-11T14:57:14.063Z",
+      "finished_at": "2026-09-11T14:57:14.332Z",
+      "duration_ms": 269,
+      "retry_count": 0,
+      "weather": {
+        "main": "Clouds",
+        "description": "broken clouds",
+        "observed_at": "2026-09-11T14:52:51.000Z"
+      },
+      "outcome": "unchanged"
+    },
+    {
+      "order_id": "1004",
+      "city": "InvalidCity123",
+      "started_at": "2026-09-11T14:57:14.064Z",
+      "finished_at": "2026-09-11T14:57:14.324Z",
+      "duration_ms": 260,
+      "retry_count": 0,
+      "error": {
+        "category": "not_found",
+        "message": "City was not found by the weather provider.",
+        "status": 404
+      }
+    }
+  ],
+  "started_at": "2026-09-11T14:57:13.831Z",
+  "finished_at": "2026-09-11T14:57:15.287Z",
+  "duration_ms": 1456,
+  "source": "live_openweathermap"
+}

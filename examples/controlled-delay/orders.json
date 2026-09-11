@@ -1,0 +1,95 @@
+{
+  "label": "CONTROLLED TEST DATA / NOT LIVE WEATHER",
+  "orders": [
+    {
+      "order_id": "controlled-1001",
+      "customer": "Alice Smith",
+      "city": "Rain City",
+      "status": "Delayed"
+    },
+    {
+      "order_id": "controlled-1002",
+      "customer": "Bob Jones",
+      "city": "Snow City",
+      "status": "Delayed"
+    },
+    {
+      "order_id": "controlled-1003",
+      "customer": "Charlie Green",
+      "city": "Extreme City",
+      "status": "Delayed"
+    },
+    {
+      "order_id": "controlled-1004",
+      "customer": "Dana White",
+      "city": "Clear City",
+      "status": "Pending"
+    }
+  ],
+  "report": {
+    "attempted": 4,
+    "succeeded": 4,
+    "delayed": 3,
+    "unchanged": 1,
+    "expected_failures": 0,
+    "unexpected_failures": 0,
+    "status": "complete",
+    "orders": [
+      {
+        "order_id": "controlled-1001",
+        "city": "Rain City",
+        "started_at": "2026-09-11T14:59:40.098Z",
+        "finished_at": "2026-09-11T14:59:40.102Z",
+        "duration_ms": 4,
+        "retry_count": 0,
+        "weather": {
+          "main": "Rain",
+          "description": "rain"
+        },
+        "outcome": "delayed",
+        "apology": "Hi Alice, your order to Rain City is delayed due to rain. We appreciate your patience!"
+      },
+      {
+        "order_id": "controlled-1002",
+        "city": "Snow City",
+        "started_at": "2026-09-11T14:59:40.102Z",
+        "finished_at": "2026-09-11T14:59:40.102Z",
+        "duration_ms": 0,
+        "retry_count": 0,
+        "weather": {
+          "main": "Snow",
+          "description": "snow"
+        },
+        "outcome": "delayed",
+        "apology": "Hi Bob, your order to Snow City is delayed due to snow. We appreciate your patience!"
+      },
+      {
+        "order_id": "controlled-1003",
+        "city": "Extreme City",
+        "started_at": "2026-09-11T14:59:40.102Z",
+        "finished_at": "2026-09-11T14:59:40.102Z",
+        "duration_ms": 0,
+        "retry_count": 0,
+        "weather": {
+          "main": "Extreme",
+          "description": "extreme weather"
+        },
+        "outcome": "delayed",
+        "apology": "Hi Charlie, your order to Extreme City is delayed due to extreme weather. We appreciate your patience!"
+      },
+      {
+        "order_id": "controlled-1004",
+        "city": "Clear City",
+        "started_at": "2026-09-11T14:59:40.102Z",
+        "finished_at": "2026-09-11T14:59:40.102Z",
+        "duration_ms": 0,
+        "retry_count": 0,
+        "weather": {
+          "main": "Clear",
+          "description": "clear sky"
+        },
+        "outcome": "unchanged"
+      }
+    ]
+  }
+}

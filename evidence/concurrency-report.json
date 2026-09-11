@@ -1,0 +1,33 @@
+{
+  "label": "CONTROLLED LOCAL TRANSPORT PROOF / NOT LIVE WEATHER",
+  "proof_method": "A local HTTP server holds every response until all four requests arrive; it throws if they do not arrive before the finite deadline.",
+  "proof_deadline_ms": 750,
+  "proof_passed": true,
+  "request_count": 4,
+  "arrival_span_ms": 1,
+  "arrivals": [
+    {
+      "city_query": "New York,US",
+      "received_at": "2026-09-11T15:01:33.228Z"
+    },
+    {
+      "city_query": "Mumbai,IN",
+      "received_at": "2026-09-11T15:01:33.229Z"
+    },
+    {
+      "city_query": "London,GB",
+      "received_at": "2026-09-11T15:01:33.229Z"
+    },
+    {
+      "city_query": "InvalidCity123",
+      "received_at": "2026-09-11T15:01:33.229Z"
+    }
+  ],
+  "responses_released_at": "2026-09-11T15:01:33.229Z",
+  "result": {
+    "attempted": 4,
+    "succeeded": 3,
+    "expected_failures": 1,
+    "unexpected_failures": 0
+  }
+}

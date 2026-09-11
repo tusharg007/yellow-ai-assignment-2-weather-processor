@@ -1,0 +1,11 @@
+{
+  "name": "yellow-ai-assignment-2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "reset": "node scripts/reset-orders.js",
+    "verify:concurrency": "node scripts/verify-concurrency.js",
+    "test": "node --test test/a2.test.js"
+  }
+}
